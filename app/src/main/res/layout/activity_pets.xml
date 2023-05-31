@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pets">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/baseline_menu_24" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:layout_marginRight="36dp"
+                android:text="Приют Надежда" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/choise_n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Кого ты хочешь себе взять?"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="выбери одну категорию"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioB_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/image_cat"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                app:srcCompat="@drawable/cat" />
+
+            <RadioButton
+                android:id="@+id/radioB_dog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/image_dog"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_weight="6"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/dog" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Кошка"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/dog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="Собака" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioB_parrot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/image_parrot"
+                android:layout_width="136dp"
+                android:layout_height="140dp"
+                app:srcCompat="@drawable/popugai" />
+
+            <RadioButton
+                android:id="@+id/radioB_hamster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/image_hamster"
+                android:layout_width="172dp"
+                android:layout_height="140dp"
+                app:srcCompat="@drawable/hamster" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/parrot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="Попугай" />
+
+            <TextView
+                android:id="@+id/hamster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:text="Хомяк" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/result"
+                android:textSize="12dp"
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"
+                android:text="Показать результаты" />
+
+            <CheckBox
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/checkBox"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Согласен(на) с условиями использования и политикой конфиденциальности" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/telegram"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/teleg" />
+
+                <ImageView
+                    android:id="@+id/inst"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/inst" />
+
+                <ImageView
+                    android:id="@+id/whats_up"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/whats_up" />
+
+                <ImageView
+                    android:id="@+id/vk"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/vk" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
